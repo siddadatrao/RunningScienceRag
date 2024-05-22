@@ -1,0 +1,8 @@
+Trying to create a better way to interface with health related text. Rather than using RAG and having the end response back to the user be a llm generated text, here I am experimenting with letting the LLM be more of a reccomender engine to then do similarity of embeddings on the back end and output some snippet from the pre-vetted corpus of text. Idea is to eventually enable doctors or professionals to share text that they align with to their clients or patients without worrying about generated text while still leveraging the power of LLM. 
+
+This is a very crude implementation as I am playing around with stuff. 
+
+Next Step is to experiment with some level of DQN type reccomender to see if I can find a pattern with how people like to traverse information. For example: 
+	Take prompt add-ons: ["Opposes", "Builds on", "Clarifies", "Qualifies", "Proves", ...]
+	- Testing out an idea of what I could do with trying to find a pattern in which individuals like to receive information.
+	- Attempt to oppose the idea of an echo-chamber
